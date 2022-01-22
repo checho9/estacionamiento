@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<link rel="icon" type="text/css" href="icons8-embotellamiento-50.png">
+	<title>Prueba de Estacionamiento</title>
+	<style type="text/css">
+		h1 
+		{
+    		text-align: center;
+		}
+		p
+		{
+			font: 14px normal normal uppercase helvetica, arial, serif;
+		}
+		#cuadrado1 
+		{
+    		position: absolute;
+    		top:8%;
+    		left:35%;
+    		width:30%;
+    		height:90%;
+    		border-radius: 20px;
+    		background-color: #808B96;
+    		opacity: 0.8;
+		}
+		#boton
+		{
+    		position: relative;
+			width: 150px;
+			height: 40px;
+			border-radius: 20px;
+			border: 0px;
+			background-color: #32A43E;
+			font: 14px normal normal uppercase helvetica, arial, serif;
+		}
+		#fondo
+		{
+    		background-image: url('estacionamiento.jpg');
+    		background-size: 105%; 
+		}
+	</style>
+</head>
+
+<body id="fondo">
+	<div>
+		<form action="conectar.php" method="POST" align="center" id="cuadrado1">
+			<h1> Estacionamiento </h1>
+			<p> Fecha:</p>
+			<input type="date" name="fecha">
+			<p> Numero de placa: </p>
+			<input type="text" name="no_placa">
+			<p> Hora de entrada: </p>
+			<input type="time" name="hora_entrada">
+			<p> Tipo: 
+				<select name="tipo" name="tipo">
+					<option id="0">Oficial</option>
+					<option id="1">Residente</option>
+					<option id="3">No residente</option>
+				</select> 
+			</p>
+			<p>Cantidad a pagar:</p>
+			<input type="Numero" name="cantidad_pagar">
+			<p> Tiempo Estacionado:</p>
+			<input type="Numero" name="tiempo_estacionado">
+			<p> Hora de salida:</p>
+			<input type="time" name="hora_salida">
+			<br>
+			<br>
+			<input type="submit" id="boton" name="submit" valor="Añadir" >
+		</form>
+	</div>
+</body>
+</html>
